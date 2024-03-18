@@ -1,0 +1,31 @@
+class Market:
+    def __init__(self):
+        self.queue = []
+
+    # QueueBehaviour methods
+    def enqueue(self, person):
+        self.queue.append(person)
+    
+    def dequeue(self):
+        if self.queue:
+            return self.queue.pop(0)
+        else:
+            return None
+
+    def get_queue_length(self):
+        return len(self.queue)
+
+    # MarketBehaviour methods
+    def add_person_to_market(self, person):
+        # Add person to the market
+        pass
+
+    def remove_person_from_market(self, person):
+        # Remove person from the market
+        pass
+
+    # Update method
+    def update(self):
+        # Update the state of the market
+        # Accept and fulfill orders
+        pass
